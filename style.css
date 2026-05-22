@@ -1506,6 +1506,26 @@ textarea.form-control {
   .hero-title span {
     font-size: 1.6rem;
   }
+
+  .hero-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+  }
+
+  .review-text {
+    font-family: Georgia, serif;
+    font-size: 1.25rem;
+    line-height: 1.7;
+    margin-bottom: 1.8rem;
+  }
   
   .story-grid {
     grid-template-columns: 1fr;
@@ -1513,8 +1533,30 @@ textarea.form-control {
   }
   
   .story-visuals {
-    height: 450px;
+    height: 380px;
     order: 2;
+    margin-top: 1.5rem;
+  }
+
+  .story-img-2 {
+    grid-row: 4 / 12;
+    transform: translateY(10px);
+  }
+
+  .story-accent-box {
+    width: 130px;
+    height: 130px;
+    padding: 1rem;
+    bottom: 5%;
+  }
+
+  .story-accent-box span {
+    font-size: 1.6rem;
+  }
+
+  .story-accent-box p {
+    font-size: 0.65rem;
+    letter-spacing: 1px;
   }
   
   .story-content {
@@ -1561,5 +1603,43 @@ textarea.form-control {
   
   .form-group-full {
     grid-column: span 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-subtitle {
+    font-size: 0.95rem;
+    letter-spacing: 4px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-title span {
+    font-size: 1.3rem;
+    letter-spacing: 4px;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.8rem;
+    font-size: 0.85rem;
+  }
+  
+  .btn-outline {
+    padding: 10px 20px;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .footer-hours-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .modal-card {
+    padding: 1.5rem;
   }
 }
