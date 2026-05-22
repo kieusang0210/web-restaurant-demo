@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AURA Gastronomy - A luxury modern culinary experience in New York. Modern American-Japanese fusion dining, curated mixology, and sophisticated ambiance.">
+  <title>AURA Gastronomy | Luxury Modern Culinary</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=32">
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Style Sheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       1. LUXURY ANIMATED PRELOADER
+       ========================================== -->
+  <div id="preloader">
+    <div class="preloader-logo">AURA</div>
+    <div class="preloader-spinner"></div>
+  </div>
+
+  <!-- ==========================================
+       2. STICKY HEADER NAVIGATION
+       ========================================== -->
+  <header>
+    <div class="container navbar">
+      <a href="#home" class="logo">AURA<span>.</span></a>
+      
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#menus">Menu</a></li>
+        <li><a href="#signatures">Chef's Specials</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contacts">Find Us</a></li>
+        <li><a href="javascript:;" class="btn btn-outline trigger-booking">Reserve</a></li>
+      </ul>
+      
+      <button class="hamburger" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       3. HERO SECTION (CINEMATIC PARALLAX)
+       ========================================== -->
+  <div id="home" class="hero">
+    <div class="hero-bg-carousel">
+      <!-- High-resolution premium culinary backgrounds -->
+      <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&q=80&w=1920');"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&q=80&w=1920');"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80&w=1920');"></div>
+    </div>
+    
+    <div class="container hero-content">
+      <p class="hero-subtitle">Modern Culinary Artistry</p>
+      <h1 class="hero-title">
+        AURA
+        <span>Gastronomy & Lounge</span>
+      </h1>
+      <p class="hero-desc">
+        Embark on an extraordinary sensory journey where contemporary American gastronomy meets sophisticated Japanese precision, curated in the heart of Manhattan.
+      </p>
+      <div class="hero-actions">
+        <a href="javascript:;" class="btn btn-primary trigger-booking">Book a Table</a>
+        <a href="#menus" class="btn btn-outline">Explore Menu</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       4. STORY / CONCEPT SECTION
+       ========================================== -->
+  <section id="about" class="story">
+    <div class="container story-grid">
+      
+      <div class="story-visuals reveal">
+        <div class="story-img-container story-img-1">
+          <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&q=80&w=800" alt="Chef Preparing Dish">
+        </div>
+        <div class="story-img-container story-img-2">
+          <img src="https://images.unsplash.com/photo-1428515613728-6b4607e44363?auto=format&fit=crop&q=80&w=800" alt="Restaurant Luxury Ambiance">
+        </div>
+        <div class="story-accent-box">
+          <span>Est.</span>
+          <p>2022<br>New York</p>
+        </div>
+      </div>
+      
+      <div class="story-content reveal" style="transition-delay: 0.2s;">
+        <span class="section-tag">Our Legacy</span>
+        <h2 class="section-title">Where Fire Meets Sophistication</h2>
+        <p>
+          At AURA, we believe dining is not merely a meal, but a cinematic art. Guided by Michelin-caliber techniques, our culinary philosophy blends the vibrant, wood-fired boldness of contemporary American fare with the delicate, seasonal minimalism of traditional Japanese cuisine.
+        </p>
+        <p>
+          Every ingredient is hand-selected from organic local farms and premium exporters from Hokkaido and Tokyo Fish Market, presenting a harmonious dialogue between East and West on every gold-rimmed plate.
+        </p>
+        
+        <div class="chef-signature">
+          <div class="signature-img">Marcus Sato</div>
+          <div class="chef-info">
+            <h4>Marcus Sato</h4>
+            <p>Executive Chef & Co-Founder</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ==========================================
+       5. INTERACTIVE FOOD MENU SECTION
+       ========================================== -->
+  <section id="menus" class="menus">
+    <div class="container">
+      
+      <div class="reveal" style="text-align: center; max-width: 600px; margin: 0 auto 4rem;">
+        <span class="section-tag">Sensory Board</span>
+        <h2 class="section-title">Curated Gastronomy</h2>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <ul class="menu-tabs reveal">
+        <li><button class="menu-tab-btn active" data-tab="appetizers">Appetizers</button></li>
+        <li><button class="menu-tab-btn" data-tab="mains">Mains</button></li>
+        <li><button class="menu-tab-btn" data-tab="desserts">Desserts</button></li>
+        <li><button class="menu-tab-btn" data-tab="mixology">Mixology</button></li>
+      </ul>
+
+      <!-- Tabs Contents Grid -->
+      <div class="menu-container reveal" style="transition-delay: 0.2s;">
+        
+        <!-- APPETIZERS GRID -->
+        <div class="menu-items-grid" id="appetizers">
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Truffle Salmon Carpaccio <span class="menu-item-badge badge-signature">Signature</span></h3>
+                <div class="menu-item-dots"></div>
+                <span class="menu-item-price">$28</span>
+              </div>
+              <p class="menu-item-desc">Wild salmon slices, yuzu zest, shaved white truffle, organic microgreens.</p>
+            </div>
+          </div>
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Seared Wagyu Tataki</h3>
+                <div class="menu-item-dots"></div>
+                <span class="menu-item-price">$34</span>
+              </div>
+              <p class="menu-item-desc">Lightly torched A5 Miyazaki Wagyu, sweet garlic chips, sesame ponzu foam.</p>
+            </div>
+          </div>
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Hokkaido Sea Scallops</h3>
+                <div class="menu-item-dots"></div>
+                <span class="menu-item-price">$32</span>
+              </div>
+              <p class="menu-item-desc">Pan-seared giant sea scallops, brown butter dashi cream, gold leaf flakes.</p>
+            </div>
+          </div>
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Charred heirloom beets <span class="menu-item-badge badge-vegan">Vegan</span></h3>
+                <div class="menu-item-dots"></div>
+                <span class="menu-item-price">$22</span>
+              </div>
+              <p class="menu-item-desc">Wood-fired beets, whipped tofu cream, candied walnuts, shiso oil vinaigrette.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAINS GRID -->
+        <div class="menu-items-grid" id="mains" style="display: none;">
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">A5 Miyazaki Wagyu Ribeye <span class="menu-item-badge badge-signature">Chef Special</span></h3>
+                <div class="menu-item-dots"></div>
+                <span class="menu-item-price">$145</span>
+              </div>
+              <p class="menu-item-desc">Pan-seared premium Miyazaki A5 Wagyu, smoked fleur de sel, red wine reduction.</p>
+            </div>
+          </div>
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Smoked Black Cod</h3>
+                <div class="menu-item-dots"></div>
+                <span class="menu-item-price">$58</span>
+              </div>
+              <p class="menu-item-desc">Saikyo miso-marinated black cod, charred wild leeks, sweet sake reduction glaze.</p>
+            </div>
+          </div>
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Crispy Roasted Duck Breast</h3>
+                <div class="menu-item-dots"></div>
+                <span class="menu-item-price">$48</span>
+              </div>
+              <p class="menu-item-desc">Spiced lavender honey glaze, sweet potato emulsion, plum wine sauce.</p>
+            </div>
+          </div>
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Maitake Mushroom Steak <span class="menu-item-badge badge-vegan">Vegan</span></h3>
+                <div class="menu-item-dots"></div>
+                <span class="menu-item-price">$38</span>
+              </div>
+              <p class="menu-item-desc">Grilled Japanese Maitake, white truffle oil, parsnip puree, roasted edamame.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- DESSERTS GRID -->
+        <div class="menu-items-grid" id="desserts" style="display: none;">
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Deconstructed Matcha Soufflé <span class="menu-item-badge badge-signature">Signature</span></h3>
+                <div class="menu-item-dots"></div>
+                <span class="menu-item-price">$18</span>
+              </div>
+              <p class="menu-item-desc">Liquid gold matcha core, white chocolate dust, edible gold leaf accents.</p>
+            </div>
+          </div>
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Smoked Dark Chocolate Dome</h3>
+                <div class="menu-item-dots"></div>
+                <span class="menu-item-price">$20</span>
+              </div>
+              <p class="menu-item-desc">Rich Valrhona dark chocolate dome melted table-side with hot caramel liqueur.</p>
+            </div>
+          </div>
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Yuzu Lemongrass Tart</h3>
+                <div class="menu-item-dots"></div>
+                <span class="menu-item-price">$16</span>
+              </div>
+              <p class="menu-item-desc">Zesty yuzu curd, crispy butter crust, lemongrass infused sweet meringue.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- MIXOLOGY GRID -->
+        <div class="menu-items-grid" id="mixology" style="display: none;">
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">The Golden Eclipse <span class="menu-item-badge badge-signature">Iconic</span></h3>
+                <div class="menu-item-dots"></div>
+                <span class="menu-item-price">$24</span>
+              </div>
+              <p class="menu-item-desc">Saffron-infused gin, elderflower liqueur, activated charcoal, smoke bubble.</p>
+            </div>
+          </div>
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Kyoto Garden</h3>
+                <div class="menu-item-dots"></div>
+                <span class="menu-item-price">$22</span>
+              </div>
+              <p class="menu-item-desc">Japanese whiskey, ceremonial matcha syrup, fresh lime juice, mint leaf essence.</p>
+            </div>
+          </div>
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Smoked Oak Old Fashioned</h3>
+                <div class="menu-item-dots"></div>
+                <span class="menu-item-price">$26</span>
+              </div>
+              <p class="menu-item-desc">Single-barrel bourbon, orange bitter, demerara sugar, table-side oak wood smoke.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- MENU SHOWCASE PANEL -->
+        <div class="menu-showcase-visual">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=800" alt="Active Showcase Dish" class="menu-showcase-img">
+          <div class="menu-showcase-overlay">
+            <h3 class="showcase-title">Truffle Salmon Carpaccio</h3>
+            <p class="showcase-desc">Thinly sliced wild-caught salmon, yuzu zest, shaved white truffles, and house-infused microgreens.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       6. CHEF'S SIGNATURES SECTION
+       ========================================== -->
+  <section id="signatures" class="signatures">
+    <div class="container">
+      
+      <div class="signatures-header reveal">
+        <span class="section-tag">Chef's Masterpieces</span>
+        <h2 class="section-title">The Signature Collection</h2>
+        <p style="color: var(--color-text-muted); font-weight: 300;">
+          A carefully curated triptych of dishes representing our core identity. Designed to challenge and delight the senses.
+        </p>
+      </div>
+
+      <div class="signatures-carousel reveal" style="transition-delay: 0.2s;">
+        
+        <!-- CARD 1 -->
+        <div class="glass-card sig-card">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=800" alt="Miyazaki Wagyu" class="sig-img">
+          <div class="sig-overlay"></div>
+          <div class="sig-content">
+            <span class="sig-tag">Gastronomy</span>
+            <h3 class="sig-title">A5 Miyazaki Wagyu</h3>
+            <p class="sig-desc">
+              Lightly seared, extremely tender Japanese A5 beef ribeye served with organic smoked fleur de sel, and local farm garlic crisps.
+            </p>
+            <a href="javascript:;" class="btn btn-outline trigger-booking" style="padding: 0.5rem 1.2rem; font-size: 0.75rem;">Reserve Table</a>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="glass-card sig-card">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=800" alt="Salmon Carpaccio" class="sig-img">
+          <div class="sig-overlay"></div>
+          <div class="sig-content">
+            <span class="sig-tag">Plates</span>
+            <h3 class="sig-title">Truffle Salmon Carpaccio</h3>
+            <p class="sig-desc">
+              Thinly sliced raw wild salmon infused with white truffle shavings, cold-pressed yuzu vinegar, and fragrant shiso greens.
+            </p>
+            <a href="javascript:;" class="btn btn-outline trigger-booking" style="padding: 0.5rem 1.2rem; font-size: 0.75rem;">Reserve Table</a>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="glass-card sig-card">
+          <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=800" alt="Golden Eclipse Cocktail" class="sig-img">
+          <div class="sig-overlay"></div>
+          <div class="sig-content">
+            <span class="sig-tag">Mixology</span>
+            <h3 class="sig-title">The Golden Eclipse</h3>
+            <p class="sig-desc">
+              A premium conceptual cocktail mixing artisanal dry gin, wild elderflower syrup, activated charcoal elixir, citrus zest, and a dramatic rosemary smoke bubble.
+            </p>
+            <a href="javascript:;" class="btn btn-outline trigger-booking" style="padding: 0.5rem 1.2rem; font-size: 0.75rem;">Reserve Table</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       7. REVIEWS & TESTIMONIALS SECTION
+       ========================================== -->
+  <section id="testimonials" class="reviews">
+    <div class="container reviews-container">
+      <div class="reveal">
+        <span class="section-tag">Critique Reviews</span>
+        <h2 class="section-title" style="margin-bottom: 2rem;">Acclaimed Excellence</h2>
+        <div class="quote-icon">“</div>
+      </div>
+
+      <div class="review-slider reveal" style="transition-delay: 0.2s;">
+        
+        <!-- REVIEW 1 -->
+        <div class="review-card active">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">
+            "AURA represents the finest evolution of Manhattan's dining culture. The A5 Miyazaki Wagyu ribeye is an absolutely flawless sensory masterpiece, and the gold-infused matcha soufflé left our culinary team completely speechless."
+          </p>
+          <h4 class="review-author">
+            The New York Times
+            <span>Michelin Guide & Food Critique</span>
+          </h4>
+        </div>
+
+        <!-- REVIEW 2 -->
+        <div class="review-card">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">
+            "The perfect fusion of American boldness and Japanese precision. The glassmorphic design of the lounge, matched with the saffron-infused Golden Eclipse cocktail, delivers a world-class luxury dining experience."
+          </p>
+          <h4 class="review-author">
+            Vogue Dining
+            <span>Luxury Lifestyle Magazine</span>
+          </h4>
+        </div>
+
+        <!-- REVIEW 3 -->
+        <div class="review-card">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">
+            "Unbelievable visual flair. Every plate is constructed like a contemporary sculpture, yet retains absolute focus on pure flavor profiles. Chef Marcus Sato has truly captured lightning in a bottle here."
+          </p>
+          <h4 class="review-author">
+            Forbes Travel Guide
+            <span>5-Star Restaurant Rating</span>
+          </h4>
+        </div>
+
+      </div>
+
+      <!-- Pagination Indicators -->
+      <div class="review-dots reveal">
+        <button class="review-dot active" aria-label="Review 1"></button>
+        <button class="review-dot" aria-label="Review 2"></button>
+        <button class="review-dot" aria-label="Review 3"></button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       8. CONTACT, ADDRESS & DYNAMIC MAP SECTION
+       ========================================== -->
+  <section id="contacts" class="story" style="background-color: var(--color-bg-obsidian); padding: 8rem 0;">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand reveal">
+          <h3>AURA<span>.</span></h3>
+          <p>
+            Experience a symphony of modern gastronomy where delicate flavor palettes and visual poetry harmonize. Located in the heart of New York City.
+          </p>
+          <div class="social-links">
+            <a href="https://instagram.com/" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/" target="_blank" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://yelp.com/" target="_blank" class="social-icon" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+          </div>
+        </div>
+
+        <!-- Hours of Operation -->
+        <div class="footer-hours reveal" style="transition-delay: 0.2s;">
+          <h4 class="footer-title">Operating Hours</h4>
+          <div class="footer-hours-grid">
+            <span>Monday - Thursday</span>
+            <span>05:00 PM - 11:00 PM</span>
+            
+            <span>Friday - Saturday</span>
+            <span>04:30 PM - Midnight</span>
+            
+            <span>Sunday Brunch</span>
+            <span>11:00 AM - 03:00 PM</span>
+            
+            <span>Sunday Dinner</span>
+            <span>05:00 PM - 10:00 PM</span>
+          </div>
+        </div>
+
+        <!-- Quick Contacts -->
+        <div class="footer-contacts reveal" style="transition-delay: 0.3s;">
+          <h4 class="footer-title">Find Us</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>732 Fifth Avenue,<br>New York, NY 10019</span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+12125550199">+1 (212) 555-0199</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:concierge@auragastronomy.com">concierge@auragastronomy.com</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Stylized Dark Google Map Iframe -->
+      <div class="footer-map-container reveal" style="transition-delay: 0.4s;">
+        <!-- Embedded Google Map centered in Fifth Avenue, NY, dark themed styled using CSS filters -->
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.142293498064!2d-73.97484392437604!3d40.76007423473919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f97bdb102b%3A0xe58bcfd324ef214a!2s732%205th%20Ave%2C%20New%20York%2C%20NY%2010019%2C%20USA!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" 
+          width="600" 
+          height="450" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="AURA Gastronomy Location Map">
+        </iframe>
+      </div>
+
+      <!-- Footer Bottom bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 AURA Gastronomy. All Rights Reserved.</p>
+        <p>Crafted by Antigravity AI | <a href="javascript:;" class="trigger-booking">Private dining</a></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       9. FLOATING ACTION CALL TRIGGER
+       ========================================== -->
+  <button class="floating-reserve trigger-booking" aria-label="Open Reservation Popup">
+    <i class="far fa-calendar-alt"></i>
+  </button>
+
+  <!-- ==========================================
+       10. RESERVATION POPUP STEP MODAL
+       ========================================== -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close Booking">&times;</button>
+      
+      <div class="modal-header">
+        <h2 class="modal-title">AURA TABLE</h2>
+        <p class="modal-subtitle">Curated Private & Social Dining Bookings</p>
+      </div>
+
+      <!-- Form Step Indicator Dots -->
+      <div class="step-indicator">
+        <div class="step-dot active" data-step="1">1</div>
+        <div class="step-dot" data-step="2">2</div>
+        <div class="step-dot" data-step="3">3</div>
+      </div>
+
+      <!-- Multistep Form -->
+      <form id="reservationForm">
+        
+        <!-- STEP 1: DATE & TIME -->
+        <div class="booking-step active" id="step1">
+          <div class="form-grid">
+            <div>
+              <label class="form-label" for="bookDate">Reservation Date</label>
+              <input type="date" id="bookDate" class="form-control" required>
+            </div>
+            <div>
+              <label class="form-label" for="bookTime">Preferred Time</label>
+              <select id="bookTime" class="form-control" required>
+                <option value="">Select Time</option>
+                <option value="05:00 PM">05:00 PM</option>
+                <option value="05:30 PM">05:30 PM</option>
+                <option value="06:00 PM">06:00 PM</option>
+                <option value="06:30 PM">06:30 PM</option>
+                <option value="07:00 PM">07:00 PM</option>
+                <option value="07:30 PM">07:30 PM</option>
+                <option value="08:00 PM">08:00 PM</option>
+                <option value="08:30 PM">08:30 PM</option>
+                <option value="09:00 PM">09:00 PM</option>
+                <option value="09:30 PM">09:30 PM</option>
+                <option value="10:00 PM">10:00 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="step-actions">
+            <button type="button" class="btn btn-primary next-step">Next Step</button>
+          </div>
+        </div>
+
+        <!-- STEP 2: GUEST & TABLE TYPE -->
+        <div class="booking-step" id="step2">
+          <div class="form-grid">
+            <div>
+              <label class="form-label" for="bookGuests">Number of Guests</label>
+              <select id="bookGuests" class="form-control" required>
+                <option value="2 Guests">2 Guests</option>
+                <option value="3 Guests">3 Guests</option>
+                <option value="4 Guests">4 Guests</option>
+                <option value="5 Guests">5 Guests</option>
+                <option value="6 Guests">6 Guests</option>
+                <option value="7+ (Private Hall)">7+ (Private Room)</option>
+              </select>
+            </div>
+            <div>
+              <label class="form-label" for="bookArea">Seating Preference</label>
+              <select id="bookArea" class="form-control" required>
+                <option value="Main Dining Room">Main Dining Room</option>
+                <option value="The Omakase Bar">Omakase Bar (Sushi)</option>
+                <option value="Glass Mezzanine Lounge">Glass Mezzanine Lounge</option>
+                <option value="Chef's Garden Patio">Chef's Garden Patio</option>
+              </select>
+            </div>
+          </div>
+          <div class="step-actions">
+            <button type="button" class="btn btn-outline prev-step">Back</button>
+            <button type="button" class="btn btn-primary next-step">Next Step</button>
+          </div>
+        </div>
+
+        <!-- STEP 3: CONTACT INFORMATION -->
+        <div class="booking-step" id="step3">
+          <div class="form-grid">
+            <div class="form-group-full">
+              <label class="form-label" for="bookName">Full Name</label>
+              <input type="text" id="bookName" class="form-control" placeholder="E.g., Alexander Mercer" required>
+            </div>
+            <div>
+              <label class="form-label" for="bookPhone">Contact Number</label>
+              <input type="tel" id="bookPhone" class="form-control" placeholder="+1 (555) 000-0000" required>
+            </div>
+            <div>
+              <label class="form-label" for="bookEmail">Email Address</label>
+              <input type="email" id="bookEmail" class="form-control" placeholder="alex@example.com" required>
+            </div>
+            <div class="form-group-full">
+              <label class="form-label" for="bookRequests">Special Dietary / Occasion Requests</label>
+              <textarea id="bookRequests" class="form-control" placeholder="Allergies, anniversaries, private chef requirements..."></textarea>
+            </div>
+          </div>
+          <div class="step-actions">
+            <button type="button" class="btn btn-outline prev-step">Back</button>
+            <button type="submit" class="btn btn-primary">Submit Booking</button>
+          </div>
+        </div>
+
+      </form>
+
+      <!-- Step Finalization Success Overlay -->
+      <div class="success-screen" style="display: none;">
+        <div class="success-icon"></div>
+        <h3 class="success-title">Table Secured</h3>
+        <p class="success-desc">
+          Thank you, <span id="confirmName" class="text-gold"></span>. Your booking request for <span id="confirmDetails" class="text-gold"></span> is confirmed. A concierge advisor will contact you shortly to confirm your seating allocation.
+        </p>
+        <button type="button" class="btn btn-primary" onclick="document.querySelector('.modal-close-btn').click();">Done</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Master JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
