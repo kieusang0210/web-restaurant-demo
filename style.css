@@ -1567,6 +1567,36 @@ textarea.form-control {
     grid-template-columns: 1fr;
   }
   
+  .menu-tabs {
+    border-bottom: none;
+    padding-bottom: 0;
+    flex-wrap: wrap;
+    gap: 0.8rem 0.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .menu-tab-btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 1.2rem;
+    letter-spacing: 1.5px;
+    border-radius: 30px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--color-text-muted);
+  }
+  
+  .menu-tab-btn::after {
+    display: none !important;
+  }
+  
+  .menu-tab-btn:hover,
+  .menu-tab-btn.active {
+    background: linear-gradient(135deg, var(--color-gold-champagne), var(--color-gold-metallic)) !important;
+    color: var(--color-text-dark) !important;
+    border-color: transparent !important;
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
+  }
+  
   .menu-showcase-visual {
     display: none; /* Hide visual showcase on mobile for better layout height flow */
   }
